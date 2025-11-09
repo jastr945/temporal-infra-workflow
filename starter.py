@@ -8,7 +8,7 @@ async def main():
     result = await client.execute_workflow(
         InfrastructureWorkflow.run,
         id=f"infrastructure-workflow-{uuid.uuid4()}",
-        task_queue="my-task-queue",
+        task_queue="terraform-infra-dev",
     )
     print("Workflow result:", result)
 

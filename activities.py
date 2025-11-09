@@ -73,3 +73,8 @@ async def terraform_cmd_apply(args):
 @activity.defn(name="terraform:output")
 async def terraform_cmd_output(args=None) -> str:
     return await _terraform_cmd_util(args)
+
+
+@activity.defn(name="terraform:destroy")
+async def terraform_cmd_destroy(args=None) -> str:
+    return await _terraform_cmd_util(args)

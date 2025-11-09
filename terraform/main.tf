@@ -12,7 +12,6 @@ module "vpc" {
   enable_dns_support   = true
 }
 
-
 resource "aws_security_group" "allow_ssh" {
   name        = "temporal-infra-workflow-allow-ssh"
   description = "Allow SSH from anywhere"
