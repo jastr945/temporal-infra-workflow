@@ -46,9 +46,9 @@ source env/bin/activate
 ```
 3. Install the Temporal Python SDK:
 ```sh
-ppip install temporalio
+pip install temporalio
 ```
-4. Install the Temporal CLI (see [documntation for other operating systems](https://docs.temporal.io/develop/python/set-up-your-local-python#install-temporal-cli))
+4. Install the Temporal CLI (see [documentation for other operating systems](https://docs.temporal.io/develop/python/set-up-your-local-python#install-temporal-cli))
 ```sh
 # macOS
 brew install temporal
@@ -62,7 +62,7 @@ temporal server start-dev
 source env/bin/activate
 python3 worker.py
 ```
-7. Trigger the workflow in another terminal:
+7. Trigger the workflow in another terminal. Make sure to pass your AWS credentials to Terraform before running this step:
 ```sh
 source env/bin/activate
 python3 starter.py
